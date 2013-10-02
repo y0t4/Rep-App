@@ -1,5 +1,4 @@
 class SalesdateController < ApplicationController
-require_dependency "config.rb"
   def index
     httpClient = HTTPClient.new
 
