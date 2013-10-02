@@ -1,2 +1,9 @@
-<h1>Salesdate#index</h1>
-<p>Find me in app/views/salesdate/index.html.erb</p>
+<h1><%= link_to 'sales date', root_path %></h1>
+
+<% if ! @jsonData.nil? %>
+<ul>
+    <% @jsonData['Items'].each do |item| %>
+      <li><%= item['Item']['salesDate'] %><%= link_to item['Item']['title'], item['Item']['affiliateUrl'] %></li>
+    <% end %>
+</ul>
+<% end %>
