@@ -1,0 +1,10 @@
+language: ruby
+rvm:
+- 2.0.0
+deploy:
+  provider: heroku
+  api_key:
+    secure: jfGLDzPh0+/VCPue2I7lXpalP0bNAow1CUS7RciAQWJbRktFAH0Wymy33NLLta9tXn9JzVpgkGpaQgqDLbF3Uoe7Wyz/QewASFnJ6avVqT22liN3xf2i1lJNfL2JFs/4pFkNLnCW2UsBYasd4Xa0qUf8+zIfb90vjTgo3eM9+DU=
+  app: radiant-mesa-7105
+  on:
+    repo: yosukeota/Rep-App
