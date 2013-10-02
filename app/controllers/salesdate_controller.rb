@@ -7,8 +7,8 @@ class SalesdateController < ApplicationController
 
     begin
       data = httpClient.get_content('https://app.rakuten.co.jp/services/api/BooksGame/Search/20130522', {
-          'applicationId' => App_id,
-          'affiliateId'   => Affiliate_id,
+          'applicationId' => ENV['App_id'],
+          'affiliateId'   => ENV['Affiliate_id'],
           'booksGenreId'  => '006',
           'sort'          => '-releaseDate'
       })
